@@ -1,0 +1,114 @@
+:root{
+    --income: green;
+    --expense: red;
+
+}
+ 
+body{
+    font-family: 'Akshar', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app h1{
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.balance-container #balance {
+    font-size: 2em;
+}
+.cashflow-container{
+    display: flex;
+    /*box-shadow: var(box-shadow);*/
+    border: 5px;
+    border-style:dashed;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.income-container{
+    border-right: 1px solid #cccccc;
+    padding-right: 20px;
+}
+.expense-container{
+    padding-left:20px;
+}
+#income, #expense{
+    font-size: 1.9em;
+}
+#income {
+    color: var(--income);
+}
+#expense{
+    color: var(--expense);
+}
+#transaction{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.transaction-container{
+    margin-top: 40px;
+}
+#transaction li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    margin-bottom: 10px;
+    border-style: dashed;
+    }
+#transaction li span{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+#transaction li .income-amount {
+    background-color: var(--income);
+}
+#transaction li .expense-amount{
+    background-color: var(--expense);
+}
+#transaction li button {
+    padding: 5px 10px 5px 10px;
+}
+.form-container form {
+    display:flex;
+    flex-direction: column;
+}
+.form-container form label {
+    padding-bottom: 10px;
+
+}
+.form-container form input {
+    height: 25px;
+    margin-bottom: 10px;
+}
+.form-container form button {
+    border: none;
+    padding: 10px;  
+    margin-bottom: 10px;
+    font-size: 1em;   
+    text-transform: uppercase;
+    color: white;
+}
+.form-container{
+    margin-top: 40px;
+}
+
+#income-button{
+    background-color: var(--income);
+}
+#expense-button{
+    background-color: var(--expense);
+}
+
+
